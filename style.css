@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background: url("./Images/windows-bg.jpg")center/cover no-repeat;
+}
+.main{
+	position: relative;
+}
+.main::before{
+	position: absolute;
+	content: "";
+	width: 13rem;
+	height: 13rem;
+	background: linear-gradient(rgba(255,255,255,0.7), #9c27b0);
+	border-radius: 50%;
+	transform: translate(-5rem, -5rem);
+}
+.main::after{
+	position: absolute;
+	content: "";
+	width: 13rem;
+	height: 13rem;
+	background: linear-gradient(#ff2871, rgba(255,255,255,0.7));
+	border-radius: 50%;
+	transform: translate(32rem, -8rem);
+}
+.menu{
+	position: relative;
+	width: 45vw;
+	height: auto;
+	z-index: 1500;
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(0.5rem);
+	box-shadow: 0.1rem 0.1rem 4rem rgba(0, 0, 0, 0.3);
+	border-radius: 0.345rem;
+}
+/**/
+.container{
+	width: 89%;
+	margin: 0 auto;
+}
+/**/
+form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+form input{
+	width: 100%;
+	outline: none;
+	border:  none;
+	padding: 0.65rem 1rem;
+	border-radius: 0.245rem;
+	z-index: 1500;
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.1rem);
+	box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+	border-bottom: 0.15rem solid #0099ff !important;
+}
+/**/
+.menu-items{
+	padding: 0 2rem;	
+}
+/*menu-titles*/
+.menu-titles{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 3vh;
+}
+.menu-titles h4{
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.menu-titles button{
+	outline: none;
+	border: none;
+	z-index: 1500;
+	opacity: 1;
+	padding: 0.5em 0.7rem;
+	border-radius: 0.245rem;
+	background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(0.1rem);
+	box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+.menu-titles button span{
+	font-size: 1rem;
+}
+
+/*menu-icons*/
+/*.pin-items .menu-icons{
+	background: red;
+}*/
+.menu-icons .icon-nav{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/**/
+.menu-icons .icon-nav .icon-img{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 5rem;
+	height: 5rem;
+	margin: 1vh 0;
+}
+.menu-icons .icon-nav .icon-img p{
+	font-size: 0.85rem;
+	font-weight: 300;
+	margin-top: 1vh;
+}
+.menu-icons .icon-nav .icon-img img{
+	z-index: 1500;
+	opacity: 1;
+	width: 2.5rem;
+	height: 2.5rem;
+	object-fit: contain;
+	filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3));
+}
+
+/*REcomended*/
+.menu-icons .recomend-icon-nav{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menu-icons .recomend-icon-nav .icon-img{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 15rem;
+	height: 3rem;
+	margin: 1vh 0;
+}
+.menu-icons .recomend-icon-nav .icon-img p{
+	font-size: 1rem;
+	font-weight: 300;
+	margin: 1vh 0 0 1rem;
+}
+.menu-icons .recomend-icon-nav .icon-img img{
+	z-index: 1500;
+	opacity: 1;
+	width: 2.5rem;
+	height: 2.5rem;
+	object-fit: contain;
+	filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3));
+}
+
+
+/*power-menu*/
+
+.power-menu{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2vh 3rem;
+	z-index: 1500;
+	opacity: 1;
+	border-radius: 0 0 0.345rem 0.345rem;
+	background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0rem);
+	box-shadow: 0rem -0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.power-menu .avtar{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;	
+}
+.power-menu .avtar img{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	object-fit: cover;
+}
+.power-menu .avtar p{
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+.power-button{
+	padding: 0 3rem 0 0;
+}
+.power-button img{
+	z-index: 1500;
+	opacity: 1;
+	width: 1.5rem;
+	height: 1.5rem;
+	object-fit: contain;
+	filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0,0,0,0.3));	
+}
